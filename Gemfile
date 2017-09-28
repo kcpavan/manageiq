@@ -169,7 +169,8 @@ group :smartstate, :manageiq_default do
 end
 
 group :ui_dependencies do # Added to Bundler.require in config/application.rb
-  manageiq_plugin "manageiq-ui-classic"
+  #manageiq_plugin "manageiq-ui-classic"
+  gem "manageiq-ui-classic",    :git => "https://github.com/kcpavan/manageiq-ui-classic.git", :branch => "master"
   # Modified gems (forked on Github)
   gem "jquery-rjs",                   "=0.1.1",                       :git => "https://github.com/ManageIQ/jquery-rjs.git", :tag => "v0.1.1-1"
 end
