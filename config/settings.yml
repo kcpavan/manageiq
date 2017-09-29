@@ -924,16 +924,16 @@
 :server:
   :asynchronous_notifications: true
   :case_sensitive_name_search: false
-  :company: My Company
+  :company: Mindstack
   :console_proxy_disabled: true
   :console_proxy_port:
     :start: 6000
     :end: 7000
-  :custom_logo: false
+  :custom_logo: true
   :events:
     :disk_usage_gt_percent: 80
   :heartbeat_timeout: 2.minutes
-  :heartbeat_frequency: 30.seconds
+  :heartbeat_frequency: 430.seconds
   :host:
   :listening_port: '443'
   :mks_classid: 338095E4-1806-4BA3-AB51-38A3179200E9
@@ -947,16 +947,16 @@
   :rails_server: puma
   :remote_console_type: VMRC
   :role: database_operations,event,reporting,scheduler,smartstate,ems_operations,ems_inventory,user_interface,websocket,web_services,automate
-  :server_dequeue_frequency: 5.seconds
-  :server_log_frequency: 5.minutes
-  :server_log_timings_threshold: 1.second
-  :server_monitor_frequency: 60.seconds
+  :server_dequeue_frequency: 15.seconds
+  :server_log_frequency: 15.minutes
+  :server_log_timings_threshold: 11.second
+  :server_monitor_frequency: 160.seconds
   :session_store: cache
   :startup_timeout: 300
   :stop_poll: 10.seconds
   :timezone: UTC
-  :worker_dequeue_frequency: 3.seconds
-  :worker_messaging_frequency: 5.seconds
+  :worker_dequeue_frequency: 13.seconds
+  :worker_messaging_frequency: 15.seconds
   :worker_monitor_frequency: 15.seconds
   :worker_monitor:
     :kill_algorithm:
